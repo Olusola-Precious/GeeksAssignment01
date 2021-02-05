@@ -1,0 +1,110 @@
+<!doctype html> {% load static %}
+<html lang="en">
+
+<head>
+    <title>Assignment > GeeksVillage.com </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Css File-->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <style>
+        body {
+            background-color: #363131;
+        }
+        
+        .quote-container {
+            margin-left: 0;
+            width: fit-content;
+        }
+        
+        .contact {
+            padding: 4%;
+            max-height: 400px;
+        }
+        
+        .col-md-3 {
+            background: #32b0c9;
+            color: #fff;
+            padding: 4%;
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+        }
+        
+        .email-info {
+            margin: 20px auto;
+        }
+        
+        .email-title {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .contact-info img {
+            margin-bottom: 15%;
+        }
+        
+        .contact-info h2 {
+            margin-bottom: 10%;
+        }
+        
+        .col-md-9 {
+            background: #fff;
+            padding: 3%;
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+        }
+        
+        .contact-form label {
+            font-weight: 600;
+        }
+        
+        .contact-form button {
+            background: #013c5a;
+            color: #fff;
+            font-weight: 600;
+            width: 25%;
+        }
+        
+        .contact-form button:hover {
+            color: #fff;
+            background: #025179;
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container contact">
+        <div class="row">
+            <!-- Intro -->
+            <div class="col-md-3">
+                <div class=" mt-md-5 email-info">
+                    <img src="https://geeksvillage.com/templates/GeeksTheme/html/img/logo.png" alt="GeeksVillage" />
+                    <h2 class="email-title">Assignment</h2>
+                    <h4 class="email-subtitle">My Assignment for the week !</h4>
+                </div>
+            </div>
+
+
+            <div class="col-md-9">
+                {% include 'quote.html' %} {% block content %} {% endblock %}
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
