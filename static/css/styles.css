@@ -1,21 +1,33 @@
 body {
-    background-color: #25274d;
+    background-color: #363131;
+}
+
+.quote-container {
+    margin-left: 0;
+    width: fit-content;
 }
 
 .contact {
     padding: 4%;
-    height: 400px;
+    max-height: 400px;
 }
 
 .col-md-3 {
-    background: #ff9b00;
+    background: #32b0c9;
+    color: #fff;
     padding: 4%;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
 }
 
-.contact-info {
-    margin-top: 10%;
+.email-info {
+    margin: 20px auto;
+}
+
+.email-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .contact-info img {
@@ -38,12 +50,14 @@ body {
 }
 
 .contact-form button {
-    background: #25274d;
+    background: #013c5a;
     color: #fff;
     font-weight: 600;
     width: 25%;
 }
 
-.contact-form button:focus {
+.contact-form button:hover {
+    color: #fff;
+    background: #025179;
     box-shadow: none;
 }
